@@ -12,13 +12,9 @@
 			<link rel="stylesheet" type="text/css" href="css/style.css">
 	<?php } ?>
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<?php if($_SERVER['PHP_SELF'] == '/www-dev/everyfaces/index.php'){ ?>
-			<script type="text/javascript" src="js/paper.js"></script>
-			<script type="text/paperscript" src="js/faces.js" canvas="cvs"></script>
-	<?php } ?>
 </head>
 <body>
 	<header class="site-header">
-		<a href="index"><h1>Storyfaces</h1></a>
+		<a href="/index"><h1>Storyfaces</h1></a>
 	</header>
 	<div class="site-container">

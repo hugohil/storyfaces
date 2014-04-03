@@ -10,5 +10,7 @@
 	$story_req = $bdd->query('SELECT content,genre FROM storyfaces WHERE id ='.$id['id']);
 	$story = $story_req->fetch();
 	$content = htmlspecialchars($story['content']);
+	$content = str_replace(',', '&#44;', $content);
 	$genre = htmlspecialchars($story['genre']);
-	echo $content.','.$genre;
+	echo $content;
+	echo $genre;
