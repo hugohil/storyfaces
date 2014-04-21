@@ -10,20 +10,21 @@
 			</ul>
 		</div>
 		<form method='post' action='validation.php' id='story-form' class='content'>
-			<div>
+			<div class="button-area border-down">
 				<label>Votre personnage est : </label>
-				<div class="select-style">
-					<select name="genre" id="genre">
-						<option selected='true' value=''>peu importe</option>
-						<option value='wom'>une femme</option>
-						<option value='men'>un homme</option>
-					</select>
-				</div>
+				<select name="genre" id="genre">
+					<option selected='true' value=''>peu importe</option>
+					<option value='wom'>une femme</option>
+					<option value='men'>un homme</option>
+				</select>
 			</div>
-			<div>
-				<textarea name='story' id='story-area' autofocus='true' spellcheck='true' class='content stories'></textarea>
+			<div class="text-area-ctn">
+				<textarea name='story' id='story-area' autofocus='true' spellcheck='true'></textarea>
 			</div>
-			<input type='submit' id="submit" value='Envoyer'><span id="count"></span>
+			<div class="button-area">
+				<input type='submit' id="submit" value='Envoyer'>
+				<span id="count"></span>
+			</div>
 		</form>
 		<p class="notice"></p>
 	</div>

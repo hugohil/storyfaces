@@ -1,69 +1,11 @@
-var group;
-var run = false;
-var nameFiles = ['wom','men'];
+var	group = new Group();
 
-function getData(file, random){
-	var data;
-    var req = $.ajax({
-        type: "GET",
-        url: file,
-        async: false
-    }).done(function(content) {
-		var re = /\s*,\s*/;
-		var datas = content.split(re);
-    	if(random){
-			var r = Math.floor(Math.random()*datas.length);
-			data = datas[r];
-    	} else {
-    		data = datas;
-    	}
-	});
-	return data;
-}
-
-function onFrame(event) {
-	if(!run){
-		group.remove();
-		draw();
-	}
-}
-
-function toggleStory(){
-	run = !run;
-	if(run){
-		var content = getData('secret.php', false);
-		var story = content[0];
-		var genre = content[1];
-		if(genre != 'men' || genre != 'wom') {
-			var r = Math.floor(Math.random()*2);
-			genre = nameFiles[r];
-		}
-		var file = 'datas/'+genre+'.txt';
-		var name = getData(file,true);
-		document.getElementById('name').innerHTML = name;
-		document.getElementById('story').innerHTML = story;
-		document.getElementById('btn').innerHTML = 'Chercher une autre histoire';
-	} else if(!run){
-		document.getElementById('name').innerHTML = '';
-		document.getElementById('story').innerHTML = '';
-		document.getElementById('btn').innerHTML = 'Lire son histoire';
-	}
-}
-
-function onKeyDown(event) {
-	if (event.key == 'r') {
-		toggleStory();
-	}
-}
-
-$('#btn').click(function(){
-	toggleStory();
-})
-
-function draw(){
+window.face = {};
+face.draw = function(){
+	group.remove();
+	group = new Group();
 	var colors = ['#E0E09F','#F0F0C0','#F0D8A8','#DAB28A','#131F1A',
 				'#51504E','#F1A361','#DF5E52','#C33A45','#572B3B'];
-	group = new Group();
 	var center = view.center;
 	var min = view.size/5;
 	var max = view.size/4;
@@ -264,8 +206,6 @@ function draw(){
 	}
 }
 
-draw();
-
 /**
 *
 *	TODO:
@@ -276,10 +216,13 @@ draw();
 *	- Sourcils
 *	- Rides (?)
 *
+*	- favicon !
+*
+*	- min faces.js ET paper.js
 *	- séparer js et paper /!\
 *		> refactoring js
-*
-*	- inté
+*	- text-shadow titre
+*	- effet sur l'affichage du texte
 *
 *	x Histoire 
 *	x vérifier pourquoi error 500 parfois sur secret.php
@@ -291,6 +234,5 @@ draw();
 *	x échappement des caractères -> C\'est (que en prod)
 *	- requettes trop lente en prod
 *
-*	- min faces.js ET paper.js
 *
 **/

@@ -6,7 +6,7 @@ module.exports = function(grunt){
 				mangle: false
 			},
 			dist: {
-	      		'min.js': 'js/faces.js'
+	      		'min.js': ['js/function.js','js/faces.js']
 			}
   		},
   		cssmin: {
