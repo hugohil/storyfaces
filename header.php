@@ -4,8 +4,6 @@
 	<meta charset='UTF-8'>
 	<title>Storyfaces</title>
 	<link rel="icon" href="./favicon.ico" />
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,500,400italic,500italic,700,700italic' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
 	<?php if($_SERVER['SERVER_ADDR'] !== '127.0.0.1'){ ?>
 			<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<?php } else { ?>

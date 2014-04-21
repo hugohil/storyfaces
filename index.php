@@ -3,13 +3,14 @@
 			<div class="content">
 				<div class="status">
 					<div class="face-header">
-						<canvas id="cvs" width='50' height='50'>
+						<canvas id="cvs" width='100' height='100'>
 						</canvas>
 						<h1 id='name'></h1>
 					</div>
 					<p id="story"></p>
 				</div>
 				<div class="button-area">
+					<a href="./participer">écrivez votre histoire</a>
 					<button id="new-story">Nouvelle histoire</button>
 				</div>
 			</div>
