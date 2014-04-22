@@ -35,10 +35,6 @@ function getStory(){
 	document.getElementById('story').innerHTML = story;
 }
 
-$('#new-story').click(function(){
-	getStory();
-})
-
 /* 
 * face n'est pas chargée au document.ready
 * click trigger que quand la souris bouge

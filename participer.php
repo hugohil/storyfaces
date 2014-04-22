@@ -1,11 +1,11 @@
 <?php include 'header.php'; ?>
 	<div class="wrapper particip">
 		<div class='info particip-infos content'>
-			<h2>Ecrivez ici votre histoire !</h2>
+			<h2>Ecrivez votre histoire ici !</h2>
 			<p>Avant de commencer, quelques précisions :</p>
 			<ul>
 				<li>Votre histoire ne doit pas dépasser 1000 caractères et ne doit pas comporter le prénom du personnage, puisqu'il sera tiré au hasard.</li>
-				<li>Vous êtes libre d'écrire ce qui vous passe par la tête, que ce soit votre dernier trajet en transports ou la quête épique d'un anneau magique très puissant. Sachez tout de même que je modère les histoires.</li>
+				<li>Vous êtes libre d'écrire ce qui vous passe par la tête. Sachez tout de même que je modère les histoires.</li>
 				<li>Sachez enfin que tout ceci est entièrement anonyme.</p></li>
 			</ul>
 		</div>

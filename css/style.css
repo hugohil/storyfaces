@@ -59,11 +59,53 @@ a {
 	text-decoration: none;
 }
 
+.site-header {
+	background: #4C66A4;
+	border-bottom: 1px solid #243254;
+	box-shadow: 0 1px 3px #BBB;
+}
+
 .site-header h1 {
+	display: inline-block;
+}
+
+.site-header h1 a {
+	vertical-align: middle;
 	margin-top: 20px;
-	text-align: center;
-	text-transform: uppercase;
 	padding: 0 20px;
+	text-align: center;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-shadow: 0 -1px #333;
+	color: #FFF;
+}
+
+.site-header .menu a:hover,
+.site-header h1 a:hover {
+	text-decoration: none;
+}
+
+.site-header .menu {
+	float: right;
+	margin-top: 8px;
+}
+
+.site-header .menu li {
+	line-height: 30px;
+	padding: 0 5px;
+	margin: 0 5px;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+.site-header .menu li:hover {
+	cursor: pointer;
+	background: #425691;
+}
+
+.site-header .menu .fa {
+	color: #FFF;
+	text-shadow: 0 -1px #333;
 }
 
 .site-container {
@@ -72,7 +114,9 @@ a {
 }
 
 .wrapper {
-	margin-bottom: 20px;
+	margin: 0 auto;
+	max-width: 1024px;
+	min-width: 300px;
 	padding: 0 20px;
 }
 
@@ -102,7 +146,7 @@ a:hover {
 	min-width: 300px;
 	width: 100%;
 	max-width: 500px;
-	margin: 0 auto 20px;
+	margin: 60px auto 20px;
 	border-radius: 3px;
 	border: 1px solid #D3D6DB;
 	background: #FFF;
@@ -118,6 +162,15 @@ a:hover {
 	margin: 0 5px;
 	color: #6D84B4;
 	vertical-align: bottom;
+}
+
+.info a {
+	color: #6D84B4;
+}
+
+#more-infos {
+	display: none;
+	text-align: left;
 }
 
 /*==========  INDEX  ==========*/

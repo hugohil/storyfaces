@@ -4,6 +4,7 @@
 	<meta charset='UTF-8'>
 	<title>Storyfaces</title>
 	<link rel="icon" href="./favicon.ico" />
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<?php if($_SERVER['SERVER_ADDR'] !== '127.0.0.1'){ ?>
 			<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<?php } else { ?>
@@ -13,6 +14,15 @@
 </head>
 <body>
 	<header class="site-header">
-		<a href="/index"><h1>Storyfaces</h1></a>
+		<div class="wrapper">
+			<h1><a href="/index">Storyfaces</a></h1>
+			<ul class="menu">
+				<?php if($_SERVER['PHP_SELF'] == '/dev/everyfaces/index.php') { ?>
+					<li class="fa fa-refresh" id="refresh"></li>
+				<?php } ?>
+				<li><a href="/participer" class="fa fa-plus"></a></li>
+				<li class="fa fa-question" id="about"></li>
+			</ul>
+		</div>
 	</header>
 	<div class="site-container">

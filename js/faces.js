@@ -54,8 +54,8 @@ face.draw = function(){
 	head.segments[5].handleOut = new Point(0, -20);
 	head.segments[5].point.y += yunit/2;
 
-	var rdmIn = Math.random()+0.5;
-	var rdmOut = Math.random()+0.5;
+	var rdmIn = Math.random()+0.2;
+	var rdmOut = Math.random()+0.2;
 	for(var i=0;i<head.segments.length;i++){
 		head.segments[i].handleIn *= rdmIn;
 		head.segments[i].handleOut *= rdmOut;
@@ -216,13 +216,18 @@ face.draw = function(){
 *	- Sourcils
 *	- Rides (?)
 *
+*	- barre header
+*	- date de l'histoire
+*	- histoire onload
+*	- plus d'infos icone header
+*	- effet sur l'affichage du texte
 *	- favicon !
+*	
+*
 *
 *	- min faces.js ET paper.js
-*	- séparer js et paper /!\
+*	x séparer js et paper pour debug /!\
 *		> refactoring js
-*	- text-shadow titre
-*	- effet sur l'affichage du texte
 *
 *	x Histoire 
 *	x vérifier pourquoi error 500 parfois sur secret.php
