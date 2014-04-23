@@ -37,6 +37,7 @@
 			?>
 			<form method='post' action='admin.php' class="admin-story">
 				<input type='text' name='genre' value='<?php echo htmlspecialchars($datas['genre']); ?>'>
+				<input type='text' name='postdate' value='<?php echo htmlspecialchars($datas['postdate']); ?>'>
 				<textarea name='content'><?php echo htmlspecialchars($datas['content']); ?></textarea>
 				<input type='hidden' name='id' value='<?php echo htmlspecialchars($datas['id']); ?>'>
 				<input type='submit' name='publier' value='publier'>
@@ -55,6 +56,7 @@
 			?>
 			<form method='post' action='admin.php' class="admin-story">
 				<input type='text' name='genre' value='<?php echo htmlspecialchars($datas['genre']); ?>'>
+				<input type='text' name='postdate' value='<?php echo htmlspecialchars($datas['postdate']); ?>'>
 				<textarea name='content'><?php echo htmlspecialchars($datas['content']); ?></textarea>
 				<input type='hidden' name='id' value='<?php echo htmlspecialchars($datas['id']); ?>'>
 				<input type='submit' name='supprimer' value='supprimer'>

@@ -216,12 +216,12 @@ face.draw = function(){
 *	- Sourcils
 *	- Rides (?)
 *
-*	- barre header
-*	- date de l'histoire
+*	x barre header
+*	x date de l'histoire
 *	- histoire onload
-*	- plus d'infos icone header
+*	x plus d'infos icone header
 *	- effet sur l'affichage du texte
-*	- favicon !
+*	x favicon !
 *	
 *
 *

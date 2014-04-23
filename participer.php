@@ -18,6 +18,11 @@
 					<option value='men'>un homme</option>
 				</select>
 			</div>
+			<?php
+				setlocale (LC_TIME, 'fr_FR.utf8','fra'); 
+				$date = strftime('%d %B');
+			?>
+			<input type='hidden' value='<?php echo $date; ?>' name='postdate' id='postdate'>
 			<div class="text-area-ctn">
 				<textarea name='story' id='story-area' autofocus='true' spellcheck='true'></textarea>
 			</div>

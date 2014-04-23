@@ -6,6 +6,7 @@
 						<canvas id="cvs" width='100' height='100'>
 						</canvas>
 						<h1 id='name'></h1>
+						<p id='date'></p>
 					</div>
 					<p id="story"></p>
 				</div>
