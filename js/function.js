@@ -24,17 +24,15 @@ function getData(file, random, type){
 function getStory(){
 	face.draw();
 	var content = getData('secret.php', false, 'json');
-	console.log(content);
 	var story = content.content;
 	var genre = content.genre;
 	var date = content.date;
-	console.log(genre);
 	if(genre != 'men' || genre != 'wom') {
 		var r = Math.floor(Math.random()*2);
 		genre = nameFiles[r];
 	}
 	var file = 'datas/'+genre+'.txt';
-	var name = getData(file, true, 'csv');
+	var name = getData(file, true, 'text');
 	document.getElementById('name').innerHTML = name;
 	document.getElementById('date').innerHTML = date;
 	document.getElementById('story').innerHTML = story;
