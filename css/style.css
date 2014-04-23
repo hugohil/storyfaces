@@ -175,8 +175,12 @@ a:hover {
 
 /*==========  INDEX  ==========*/
 
+.face-header {
+	height: 100px;
+}
+
 #cvs {
-	display: inline-block;
+	float: left;
 	border-radius: 3px;
 	border: 1px solid #D3D6DB;
 	margin-right: 10px;
@@ -186,12 +190,16 @@ a:hover {
 	color: #3B5998;
 	font-size: 16px;
 	line-height: 22px;
-	display: inline-block;
 	vertical-align: top;
 	margin-top: 5px;
 }
 
+#date {
+	color: #888;
+}
+
 #story {
+	clear: left;
 	font-size: 16px;
 	line-height: 1.28;
 	margin: 15px 0;
