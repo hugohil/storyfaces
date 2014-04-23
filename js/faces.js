@@ -1,6 +1,5 @@
 var	group = new Group();
 
-window.face = {};
 face.draw = function(){
 	group.remove();
 	group = new Group();
@@ -205,6 +204,8 @@ face.draw = function(){
 		}
 	}
 }
+
+$(document).ready(getStory());
 
 /**
 *

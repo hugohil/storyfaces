@@ -1,4 +1,5 @@
 var nameFiles = ['wom','men'];
+var face = {};
 
 function getData(file, random, type){
 	var data;
@@ -39,6 +40,5 @@ function getStory(){
 }
 
 /* 
-* face n'est pas chargée au document.ready
 * click trigger que quand la souris bouge
 */

@@ -15,10 +15,12 @@
 <body>
 	<header class="site-header">
 		<div class="wrapper">
-			<h1><a href="/index">Storyfaces</a></h1>
+			<h1><a href="/">Storyfaces</a></h1>
 			<ul class="menu">
 				<?php if($_SERVER['PHP_SELF'] == '/dev/everyfaces/index.php') { ?>
 					<li class="fa fa-refresh" id="refresh"></li>
+				<?php } else { ?>
+					<li><a href="/" class="fa fa-refresh"></a></li>
 				<?php } ?>
 				<li><a href="/participer" class="fa fa-plus"></a></li>
 				<li class="fa fa-question" id="about"></li>
